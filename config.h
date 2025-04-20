@@ -1,15 +1,14 @@
-#define EN 15
-#define DIR 13
-#define STEP 11
+#define EN 15               // Пин для включения/отключения драйвера шагового двигателя (Enable)
+#define DIR 13              // Пин для задания направления вращения шагового двигателя (Direction)
+#define STEP 11             // Пин для подачи шаговых импульсов на шаговый двигатель (Step)
 
-#define SOUND 6
+#define SOUND 6             // Пин для управления звуковым сигналом
 
-#define MAX_TASK 6
-#define MAX_PAYLOAD_SIZE 8
-#define TIMEOUT_MS 5000
+#define MAX_TASK 6          // Максимальное количество задач (будильников)
+#define MAX_PAYLOAD_SIZE 8  // Максимальный размер пакета данных с блютуз в байтах
 
-#define SPEED 200
-#define PARTITION 800
+#define SPEED 200           // Скорость движения шагового двигателя
+#define PARTITION 800       // Количество шагов одной порции
 
-#define EEPROM_ADDR 0x57
-#define EEPROM_START_ADDR 0x0000
+#define EEPROM_ADDR 0x57            // Адрес устройства EEPROM на шине I2C, НЕ МЕНЯТЬ!
+#define EEPROM_START_ADDR 0x0000    // Начальный адрес для записи/чтения в EEPROM, НЕ МЕНЯТЬ!
